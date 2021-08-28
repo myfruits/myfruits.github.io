@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Rubik+Mono+One&family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;900&display=swap');
+
+$red: #FE3535;
+$black: #1f1f1f;
+$font: 'Rubik', sans-serif;
+$normal: 2.5vh;
+$bold: 900;
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin button(){
+    height: 6vh;
+    width: auto;
+    color: white;
+    font-size: $normal;
+    font-weight: $bold;
+    border: 2px solid transparent;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+body{
+    background-color: $black;
+}
+
+.header{
+    position: relative;
+}
+
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    @include flex(column, none, center);
+    .card{
+        top: 1.5vh;
+        position: relative;
+        margin: 2vh;
+        width: 90vw;
+        height: 30vh;
+        border-radius: 15px;
+        box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+        @include flex(row, left, center);
+        .image{
+            width: 25vh;
+            height: 30vh;
+            @include flex(column, space-evenly,center);
+            .prodImg{
+                width: 25vh;
+                height: 25vh;
+                @include flex(row,center, center);
+                img{
+                    height: 20vh;
+                    width: auto;
+                    position: relative;
+                    top: 1vh;
+                }
+            }
+            .star{
+                width: 25vh;
+                height: 5vh;
+                border-radius: 0px 0px 0px 15px;
+                @include flex(row, center, center);
+                .starImg{
+                    height: 3vh;
+                    width: auto;
+                }
+            }
+        }
+        .text{
+            width: calc(90vw - 25vh);
+            height: 30vh;
+            @include flex(column, space-evenly, center);
+            .desc{
+                height: 30vh;
+                width: calc(90vw - 25vh);
+                border-left: 1px solid rgba(255, 255, 255, 0.1);
+                @include flex(row, center, center);
+                p{
+                    font-size: 1.7vh;
+                    color: white;
+                    margin: 0.5vh;
+                    .mark{
+                        font-weight: $bold;
+                    }
+                }
+            }
+            .price{
+                @extend .desc;
+                height: 5vh;
+                @include flex(row, left, center);
+                p{
+                    font-size: 1.8vh;
+                    color: white;
+                    font-weight: $bold;
+                }
+            }
+        }
+    }
+}

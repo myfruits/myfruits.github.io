@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Rubik+Mono+One&family=Rubik:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.header {
+  z-index: 1;
+  width: 100vw;
+  height: 11vh;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .left {
+  width: 20vw;
+  height: 11vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .left img {
+  width: 23vw;
+  height: auto;
+  cursor: pointer;
+}
+
+.header .right {
+  width: 70vw;
+  height: 11vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .right button {
+  height: 6vh;
+  width: auto;
+  color: white;
+  font-size: 2.5vh;
+  font-weight: 700;
+  border: 2px solid transparent;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header .right button svg {
+  width: 6vw;
+  height: auto;
+}
+
+.header .right #shop, .header .right #settings {
+  padding: 0 1vh;
+}
+
+.header .right .button:hover {
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-bottom: 2px solid white;
+}
+
+.header .right #signup {
+  padding: 0vh 1vh;
+  border: 2px solid white;
+}
+
+.header .other {
+  display: none;
+}
+
+.footer {
+  width: 100vw;
+  height: 15vh;
+}
+
+.footer .footerContent {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerContent button {
+  height: 6vh;
+  width: auto;
+  color: white;
+  font-size: 2.5vh;
+  font-weight: 700;
+  border: 2px solid transparent;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer .name {
+  width: 100vw;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .name p {
+  font-size: 2.5vh;
+  color: white;
+}
+
+@media only screen and (min-width: 375px), (min-heigth: 667px) {
+  .header .right button {
+    font-size: 1.9vh;
+    height: 5vh;
+  }
+  .footer .footerContent button {
+    font-size: 1.65vh;
+  }
+  .footer .name p {
+    font-size: 1.65vh;
+  }
+}
+
+@media only screen and (min-width: 425px), (min-height: 800px) {
+  .header .right button {
+    font-size: 1.65vh;
+    height: 5vh;
+  }
+  .footer .name p {
+    font-size: 1.6vh;
+  }
+}
+
+@media only screen and (min-width: 768px), (min-height: 1024px) {
+  .header .left img {
+    width: 20vw;
+    height: auto;
+  }
+  .header .right {
+    width: 80vw;
+  }
+  .header .right .other {
+    display: block;
+  }
+  .header .right button {
+    font-size: 2vh;
+  }
+  .header .right button svg {
+    width: 5vw;
+    height: auto;
+  }
+  .footer .footerContent button {
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (min-width: 1024px), (min-height: 768px) {
+  .header .left img {
+    width: 17vw;
+    height: auto;
+  }
+  .header .right button {
+    height: 7vh;
+    font-size: 3vh;
+  }
+  .footer .footerContent button {
+    font-size: 2.5vh;
+  }
+  .footer .name p {
+    font-size: 1.8vh;
+  }
+}
+
+@media only screen and (min-width: 1440px), (min-height: 900px) {
+  .header {
+    position: fixed;
+  }
+  .header .right {
+    width: 75vw;
+  }
+  .header .right button {
+    font-size: 3.2vh;
+  }
+  .header .right button svg {
+    width: 3.75vw;
+    height: auto;
+  }
+  .header .left img {
+    width: 16.5vw;
+  }
+  .footer .footerContent button {
+    font-size: 2.3vh;
+  }
+  .footer .name p {
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (min-width: 2560px), (min-height: 1440px) {
+  .header .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .left img {
+    width: 14vw;
+    height: auto;
+  }
+  .header .right {
+    width: 75vw;
+  }
+  .header .right button svg {
+    width: 3.5vw;
+    height: auto;
+  }
+  .footer .footerContent button {
+    font-size: 2.2vh;
+  }
+  .footer .name {
+    font-size: 1.7vh;
+  }
+}
+
+@media only screen and (width: 412px), (height: 914px) {
+  .header .left img {
+    position: relative;
+    bottom: 0.5vh;
+    width: 25vw;
+    height: auto;
+  }
+  .header .right {
+    width: 70vw;
+  }
+  .header .right #settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .right button {
+    font-size: 2.1vh;
+    height: 4vh;
+  }
+  .header .right button svg {
+    width: 7vw;
+  }
+  .footer .footerContent button {
+    font-size: 1.8vh;
+  }
+  .footer .name p {
+    font-size: 1.6vh;
+  }
+}
+
+@media only screen and (width: 1848px), (height: 949px) {
+  .header .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .left img {
+    position: relative;
+    top: 1vh;
+    width: 15vw;
+    height: auto;
+  }
+  .header .right #settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .right button svg {
+    width: 2.5vw;
+    height: auto;
+  }
+}
+
+@media only screen and (width: 360px), (height: 640px) {
+  .header .left img {
+    width: 23vw;
+  }
+  .header .right button {
+    font-size: 2vh;
+    height: 5vh;
+  }
+  .footer .footerContent button {
+    font-size: 1.8vh;
+  }
+  .footer .name p {
+    font-size: 1.5vh;
+  }
+}
+
+@media only screen and (width: 411px), (height: 731px) {
+  .header .left img {
+    width: 25vw;
+    height: auto;
+  }
+  .header .right button {
+    font-size: 2vh;
+  }
+  .footer .footerContent button {
+    font-size: 1.9vh;
+  }
+  .footer .name {
+    font-size: 1.7vh;
+  }
+}
+
+@media only screen and (width: 411px), (height: 823px) {
+  .header .left img {
+    width: 25vw;
+  }
+  .header .right button {
+    font-size: 2vh;
+    height: 5.5vh;
+  }
+  .footer .footerContent button {
+    font-size: 1.8vh;
+  }
+  .footer .name p {
+    font-size: 1.6vh;
+  }
+}
+
+@media only screen and (width: 411px), (height: 736px) {
+  .header .left img {
+    width: 25vw;
+    height: auto;
+  }
+  .footer .footerContent button {
+    font-size: 2vh;
+  }
+  .footer .name p {
+    font-size: 1.6vh;
+  }
+}
+
+@media only screen and (width: 375px), (height: 812px) {
+  .header .left img {
+    position: relative;
+    bottom: 1vh;
+    width: 25vw;
+    height: auto;
+  }
+  .header .right button {
+    font-size: 1.9vh;
+    height: 5vh;
+  }
+  .footer .footerContent button {
+    font-size: 2vh;
+  }
+  .footer .name {
+    font-size: 1.8vh;
+  }
+}
+
+@media only screen and (width: 768px), (height: 1024px) {
+  .header .right button {
+    font-size: 2.2vh;
+    height: 6vh;
+  }
+  .footer .footerContent button {
+    font-size: 2.1vh;
+  }
+  .footer .name p {
+    font-size: 1.9vh;
+  }
+}
+
+@media only screen and (width: 1024px), (height: 1366px) {
+  .header .right #settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .right button {
+    font-size: 2.5vh;
+    height: 6vh;
+  }
+  .header .right button svg {
+    width: 5vw;
+    height: auto;
+  }
+  .footer .footerContent button {
+    font-size: 2.3vh;
+  }
+  .footer .name p {
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (width: 540px), (height: 720px) {
+  .header .right {
+    width: 65vw;
+  }
+  .header .right #settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .right button {
+    font-size: 2.4vh;
+    height: 5.5vh;
+  }
+  .header .right button svg {
+    width: 5vw;
+    height: auto;
+  }
+  .footer .footerContent button {
+    font-size: 2.2vh;
+  }
+  .footer .name p {
+    font-size: 1.8vh;
+  }
+}
+
+@media only screen and (width: 280px), (height: 653px) {
+  .header {
+    height: 9vh;
+  }
+  .header .right {
+    height: 9vh;
+  }
+  .header .right button {
+    font-size: 2vh;
+    height: 5vh;
+  }
+  .header .left img {
+    width: 25vw;
+    height: auto;
+  }
+  .footer .footerContent button {
+    font-size: 1.8vh;
+  }
+  .footer .name p {
+    font-size: 1.6vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

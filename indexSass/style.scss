@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Rubik+Mono+One&family=Rubik:wght@700&display=swap');
+
+$font: 'Rubik', sans-serif;
+$normal: 1.9vh;
+$bold: 700;
+
+//colors
+$papaya: #FE5F1F;
+$passion: #C309FF;
+$straw: #811814;
+$water: #FE4770;
+$red: #FE3535;
+$black: #1f1f1f;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+.slider {
+	overflow: hidden;
+    figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 45s slider infinite;
+        img {
+            z-index: 0;
+            width: 100vw;
+            float: left;
+        }
+        @keyframes slider {
+            0% {
+                left: 0;
+            }
+            20% {
+                left: 0;
+            }
+            25% {
+                left: -100%;
+            }
+            45% {
+                left: -100%;
+            }
+            50% {
+                left: -200%;
+            }
+            70% {
+                left: -200%;
+            }
+            75% {
+                left: -300%;
+            }
+            95% {
+                left: -300%;
+            }
+            100% {
+                left: -400%;
+            }
+        }
+    }
+}
+
+.largeScreen{
+    display: none;
+}
+
+.footer{
+    background-color: $papaya;
+    animation: color 45s infinite;
+    @keyframes color{
+        0%{
+            background-color: $papaya;
+        }
+        22%{
+            background-color: $papaya;
+        }
+        25%{
+            background-color: $passion;
+        }
+        47%{
+            background-color: $passion;
+        }
+        50%{
+            background-color: $straw;
+        }
+        72%{
+            background-color: $straw;
+        }
+        75%{
+            background-color: $water;
+        }
+        97%{
+            background-color: $water;
+        }
+        100%{
+            background-color: $water;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 768px){
+    .main{
+        .slider{
+            display: none;
+        }
+        .largeScreen{
+            display: block;
+        }
+    }
+}
+
+

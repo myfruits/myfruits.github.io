@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Rubik+Mono+One&family=Rubik:wght@700&display=swap');
+
+$red: #FE3535;
+$black: #1f1f1f;
+$font: 'Rubik', sans-serif;
+$normal: 2.5vh;
+$bold: 700;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+html{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin button(){
+    height: 6vh;
+    width: auto;
+    color: white;
+    font-size: $normal;
+    font-weight: $bold;
+    border: 2px solid transparent;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.header{
+    z-index: 1;
+    width: 100vw;
+    height: 11vh;
+    position: absolute;
+    @include flex(row, space-between, center);
+    .left{
+        width: 20vw;
+        height: 11vh;
+        @include flex(row, center, center);
+        img{
+            width: 23vw;
+            height: auto;
+            cursor: pointer;;
+        }
+    }
+    .right{
+        width: 70vw;
+        height: 11vh;
+        @include flex(row, space-evenly, center);
+        button{
+            @include button();
+            svg{
+                width: 6vw;
+                height: auto;
+            }
+        }
+        #shop, #settings{
+            padding: 0 1vh;
+        }
+        .button:hover{
+            transition: 0.6s ease;
+            border-bottom: 2px solid white;
+        }
+        #signup{
+            padding: 0vh 1vh;
+            border: 2px solid white;
+        }
+    }
+    .other{
+        display: none;
+    }
+}
+
+.footer{
+    width: 100vw;
+    height: 15vh;
+    .footerContent{
+        width: 100vw;
+        height: 10vh;
+        @include flex(row,space-evenly, center);
+        button{
+            @include button();
+        }
+
+    }
+    .name{
+        width: 100vw;
+        height: 5vh;
+        @include flex(row, center, center);
+        p{
+            font-size: $normal;
+            color: white;
+        }
+    }
+}
+
+@media only screen and (min-width: 375px), (min-heigth: 667px){
+    .header{
+        .right{
+            button{
+                font-size: 1.9vh;
+                height: 5vh;
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 1.65vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 1.65vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 425px), (min-height: 800px){
+    .header{
+        .right{
+            button{
+                font-size: 1.65vh;
+                height: 5vh;
+            }
+        }
+    }
+    .footer{
+        .name{
+            p{
+                font-size: 1.6vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px), (min-height: 1024px){
+    .header{
+        .left{
+            img{
+                width: 20vw;
+                height: auto;
+            }
+        }
+        .right{
+            width: 80vw;
+            .other{
+                display: block;
+            }
+            button{
+                font-size: 2vh;
+                svg{
+                    width: 5vw;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 2vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px), (min-height: 768px){
+    .header{
+        .left{
+            img{
+                width: 17vw;
+                height: auto;
+            }
+        }
+        .right{
+            button{
+                height: 7vh;
+                font-size: 3vh;
+            }
+        }
+    }
+
+    .footer{
+        .footerContent{
+            button{
+                font-size: 2.5vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 1.8vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px), (min-height: 900px){
+    .header{
+        position: fixed;
+        .right{
+            width: 75vw;
+            button{
+                font-size: 3.2vh;
+                svg{
+                    width: 3.75vw;
+                    height: auto;
+                }
+            }
+        }
+        .left{
+            img{
+                width: 16.5vw;
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 2.3vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 2vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2560px), (min-height: 1440px){
+    .header{
+        .left{
+            @include flex(row, left, center);
+            img{
+                width: 14vw;
+                height: auto;
+            }
+        }
+        .right{
+            width: 75vw;
+            button{
+                svg{
+                    width: 3.5vw;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 2.2vh;
+            }
+        }
+        .name{
+            font-size: 1.7vh;
+        }
+    }
+}
+
+@media only screen and (width: 412px), (height: 914px){
+    .header{
+        .left{
+            img{
+                position: relative;
+                bottom: 0.5vh;
+                width: 25vw;
+                height: auto;
+            }
+        }
+        .right{
+            width: 70vw;
+            #settings{
+                @include flex(row, center, center);
+            }
+            button{
+                font-size: 2.1vh;
+                height: 4vh;
+                svg{
+                    width: 7vw;
+                }
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 1.8vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 1.6vh;
+            }
+        }
+    }
+}
+
+@media only screen and (width: 1848px), (height: 949px){
+    .header{
+        .left{
+            @include flex(row, left, center);
+            img{
+                position: relative;
+                top:1vh;
+                width: 15vw;
+                height: auto;
+            }
+        }
+        .right{
+            #settings{
+                @include flex(row, center, center);
+            }
+            button{
+                svg{
+                    width: 2.5vw;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (width: 360px), (height: 640px){
+    .header{
+        .left{
+            img{
+                width: 23vw;
+            }
+        }
+        .right{
+            button{
+                font-size: 2vh;
+                height: 5vh;
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 1.8vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 1.5vh;
+            }
+        }
+    }
+}
+
+@media only screen and (width: 411px), (height: 731px){
+    .header{
+        .left{
+            img{
+                width: 25vw;
+                height: auto;
+            }
+        }
+        .right{
+            button{
+                font-size: 2vh;
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 1.9vh;
+            }
+        }
+        .name{
+            font-size: 1.7vh;
+        }
+    }
+}
+
+@media only screen and (width: 411px), (height: 823px){
+    .header{
+        .left{
+            img{
+                width: 25vw;
+            }
+        }
+        .right{
+            button{
+                font-size: 2vh;
+                height: 5.5vh;
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 1.8vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 1.6vh;
+            }
+        }
+    }
+}
+
+@media only screen and (width: 411px), (height: 736px){
+    .header{
+        .left{
+            img{
+                width: 25vw;
+                height: auto;
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 2vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 1.6vh;
+            }
+        }
+    }
+}
+
+@media only screen and (width: 375px), (height: 812px){
+    .header{
+        .left{
+            img{
+                position: relative;
+                bottom: 1vh;
+                width: 25vw;
+                height: auto;
+            }
+        }
+        .right{
+            button{
+                font-size: 1.9vh;
+                height: 5vh;
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 2vh;
+            }
+        }
+        .name{
+            font-size: 1.8vh;
+        }
+    }
+}
+
+@media only screen and (width: 768px), (height: 1024px){
+    .header{
+        .right{
+            button{
+                font-size: 2.2vh;
+                height: 6vh;
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 2.1vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 1.9vh;
+            }
+        }
+    }
+}
+
+@media only screen and (width: 1024px), (height: 1366px){
+    .header{
+        .right{
+            #settings{
+                @include flex(row, center, center);
+            }
+            button{
+                font-size: 2.5vh;
+                height: 6vh;
+                svg{
+                    width: 5vw;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 2.3vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 2vh;
+            }
+        }
+    }
+}
+
+@media only screen and (width: 540px), (height: 720px){
+    .header{
+        .right{
+            width: 65vw;
+            #settings{
+                @include flex(row, center, center);
+            }
+            button{
+                font-size: 2.4vh;
+                height: 5.5vh;
+                svg{
+                    width: 5vw;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .footer{
+        .footerContent{
+            button{
+                font-size: 2.2vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 1.8vh;
+            }
+        }
+    }
+}
+
+@media only screen and (width: 280px), (height: 653px){
+    .header{
+        height: 9vh;
+        .right{
+            height: 9vh;
+            button{
+                font-size: 2vh;
+                height: 5vh;
+            }
+        }
+        .left{
+            img{
+                width: 25vw;
+                height: auto;
+            }
+        }
+    }
+
+    .footer{
+        .footerContent{
+            button{
+                font-size: 1.8vh;
+            }
+        }
+        .name{
+            p{
+                font-size: 1.6vh;
+            }
+        }
+    }
+}

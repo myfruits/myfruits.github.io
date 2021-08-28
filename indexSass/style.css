@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Rubik+Mono+One&family=Rubik:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  -webkit-animation: 45s slider infinite;
+          animation: 45s slider infinite;
+}
+
+.slider figure img {
+  z-index: 0;
+  width: 100vw;
+  float: left;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+.largeScreen {
+  display: none;
+}
+
+.footer {
+  background-color: #FE5F1F;
+  -webkit-animation: color 45s infinite;
+          animation: color 45s infinite;
+}
+
+@-webkit-keyframes color {
+  0% {
+    background-color: #FE5F1F;
+  }
+  22% {
+    background-color: #FE5F1F;
+  }
+  25% {
+    background-color: #C309FF;
+  }
+  47% {
+    background-color: #C309FF;
+  }
+  50% {
+    background-color: #811814;
+  }
+  72% {
+    background-color: #811814;
+  }
+  75% {
+    background-color: #FE4770;
+  }
+  97% {
+    background-color: #FE4770;
+  }
+  100% {
+    background-color: #FE4770;
+  }
+}
+
+@keyframes color {
+  0% {
+    background-color: #FE5F1F;
+  }
+  22% {
+    background-color: #FE5F1F;
+  }
+  25% {
+    background-color: #C309FF;
+  }
+  47% {
+    background-color: #C309FF;
+  }
+  50% {
+    background-color: #811814;
+  }
+  72% {
+    background-color: #811814;
+  }
+  75% {
+    background-color: #FE4770;
+  }
+  97% {
+    background-color: #FE4770;
+  }
+  100% {
+    background-color: #FE4770;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
+  .main .slider {
+    display: none;
+  }
+  .main .largeScreen {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
