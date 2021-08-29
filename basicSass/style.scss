@@ -110,7 +110,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 375px), (min-heigth: 667px){
+@media only screen and (min-width: 375px) and (min-heigth: 667px){
     .header{
         .right{
             button{
@@ -133,7 +133,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 425px), (min-height: 800px){
+@media only screen and (min-width: 425px) and (min-height: 800px){
     .header{
         .right{
             button{
@@ -151,7 +151,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 768px), (min-height: 1024px){
+@media only screen and (min-width: 768px) and (min-height: 1024px){
     .header{
         .left{
             img{
@@ -182,7 +182,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 1024px), (min-height: 768px){
+@media only screen and (min-width: 1024px) and (min-height: 768px){
     .header{
         .left{
             img{
@@ -193,7 +193,7 @@ body{
         .right{
             button{
                 height: 7vh;
-                font-size: 3vh;
+                font-size: 2vh;
             }
         }
     }
@@ -212,7 +212,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 1440px), (min-height: 900px){
+@media only screen and (min-width: 1440px) and (min-height: 900px){
     .header{
         position: fixed;
         .right{
@@ -245,7 +245,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 2560px), (min-height: 1440px){
+@media only screen and (min-width: 2560px) and (min-height: 1440px){
     .header{
         .left{
             @include flex(row, left, center);
@@ -276,7 +276,7 @@ body{
     }
 }
 
-@media only screen and (width: 412px), (height: 914px){
+@media only screen and (width: 412px) and (height: 914px){
     .header{
         .left{
             img{
@@ -292,7 +292,7 @@ body{
                 @include flex(row, center, center);
             }
             button{
-                font-size: 2.1vh;
+                font-size: 2vh;
                 height: 4vh;
                 svg{
                     width: 7vw;
@@ -314,7 +314,7 @@ body{
     }
 }
 
-@media only screen and (width: 1848px), (height: 949px){
+@media only screen and (width: 1848px) and (height: 949px){
     .header{
         .left{
             @include flex(row, left, center);
@@ -339,7 +339,7 @@ body{
     }
 }
 
-@media only screen and (width: 360px), (height: 640px){
+@media only screen and (width: 360px) and (height: 640px){
     .header{
         .left{
             img{
@@ -367,7 +367,7 @@ body{
     }
 }
 
-@media only screen and (width: 411px), (height: 731px){
+@media only screen and (width: 411px) and (height: 731px){
     .header{
         .left{
             img{
@@ -393,7 +393,7 @@ body{
     }
 }
 
-@media only screen and (width: 411px), (height: 823px){
+@media only screen and (width: 411px) and (height: 823px){
     .header{
         .left{
             img{
@@ -421,7 +421,7 @@ body{
     }
 }
 
-@media only screen and (width: 411px), (height: 736px){
+@media only screen and (width: 411px) and (height: 736px){
     .header{
         .left{
             img{
@@ -444,7 +444,7 @@ body{
     }
 }
 
-@media only screen and (width: 375px), (height: 812px){
+@media only screen and (width: 375px) and (height: 812px){
     .header{
         .left{
             img{
@@ -473,7 +473,7 @@ body{
     }
 }
 
-@media only screen and (width: 768px), (height: 1024px){
+@media only screen and (width: 768px) and (height: 1024px){
     .header{
         .right{
             button{
@@ -496,7 +496,7 @@ body{
     }
 }
 
-@media only screen and (width: 1024px), (height: 1366px){
+@media only screen and (width: 1024px) and (height: 1366px){
     .header{
         .right{
             #settings{
@@ -526,7 +526,7 @@ body{
     }
 }
 
-@media only screen and (width: 540px), (height: 720px){
+@media only screen and (width: 540px) and (height: 720px){
     .header{
         .right{
             width: 65vw;
@@ -557,7 +557,7 @@ body{
     }
 }
 
-@media only screen and (width: 280px), (height: 653px){
+@media only screen and (width: 280px) and (height: 653px){
     .header{
         height: 9vh;
         .right{

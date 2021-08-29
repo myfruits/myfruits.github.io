@@ -27,8 +27,12 @@ $bold: 900;
     cursor: pointer;
 }
 
-
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
 body{
+    width: 100vw;
     background-color: $black;
 }
 
@@ -43,7 +47,7 @@ body{
     .card{
         top: 1.5vh;
         position: relative;
-        margin: 2vh;
+        margin: 3vh;
         width: 90vw;
         height: 30vh;
         border-radius: 15px;
@@ -91,6 +95,9 @@ body{
                     .mark{
                         font-weight: $bold;
                     }
+                    .title{
+                        color: $red;
+                    }
                 }
             }
             .price{
@@ -101,6 +108,321 @@ body{
                     font-size: 1.8vh;
                     color: white;
                     font-weight: $bold;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 375px) and (height: 667px){
+    .main{
+        .card{
+            .text{
+                .desc{
+                    p{
+                        font-size: 1.6vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) and (min-height: 800px){
+    .main{
+        .card{
+            .image{
+                .prodImg{
+                    img{
+                        height: 16vh;
+                        width: auto;
+                    }
+                }
+            }
+            .text{
+                .desc{
+                    p{
+                        font-size: 1.4vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-height: 1024px){
+    .main{
+        .card{
+            width: 80vw;
+            height: auto;
+            .image{
+                width: 20vw;
+                .prodImg{
+                    img{
+                        width: 17vw;
+                        height: auto;
+                    }
+                }
+                .star{
+                    .starImg{
+                        height: 2.7vh;
+                        width: auto;
+                    }
+                }
+            }
+            .text{
+                width: 60vw;
+                .desc{
+                    p{
+                        font-size: 2vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 768px){
+    .main{
+        .card{
+            position: relative;
+            top: 3vh;
+            width: 50vw;
+            height: auto;
+            .image{
+                width: 12vw;
+                .prodImg{
+                    img{
+                        width: 9vw;
+                        height: auto;
+                    }
+                }
+            }
+            .text{
+                width: 38vw;
+                .desc{
+                    width: 38vw;
+                    p{
+                        font-size: 2vh;
+                    }
+                }
+                .price{
+                    width: 38vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 412px) and (min-height: 914px){
+    .main{
+        .card{
+            width: 90vw;
+            .image{
+                width: 25vw;
+                .prodImg{
+                    img{
+                        width: 23vw;
+                        height: auto;
+                    }
+                }
+                .star{
+                    .starImg{
+                        height: 2vh;
+                        width: auto;
+                    }
+                }
+            }
+            .text{
+                width: 65vw;
+                .desc{
+                    width: 65vw;
+                    p{
+                        font-size: 1.6vh;
+                    }
+                }
+                .price{
+                    width: 65vw;
+                    font-size: 1.6vh;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (min-height: 640px){
+    .main{
+        .card{
+            .text{
+                .desc{
+                    p{
+                        font-size: 1.6vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 411px) and (min-height: 823px){
+    .main{
+        .card{
+            width: 90vw;
+            .image{
+                width: 25vw;
+                .prodImg{
+                    img{
+                        width: 22vw;
+                        height: auto;
+                    }
+                }
+                .star{
+                    .starImg{
+                        height: 2vh;
+                        width: auto;
+                    }
+                }
+            }
+            .text{
+                width: 65vw;
+                .desc{
+                    width: 65vw;
+                }
+                .price{
+                    width: 65vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 375px) and (min-height: 812px){
+    .main{
+        .card{
+            width: 90vw;
+            .image{
+                width: 25vw;
+                .prodImg{
+                    img{
+                        width: 22vw;
+                        height: auto;
+                    }
+                }
+                .star{
+                    .starImg{
+                        height: 2vh;
+                        width: auto;
+                    }
+                }
+            }
+            .text{
+                width: 65vw;
+                .desc{
+                    width: 65vw;
+                    p{
+                        font-size: 1.5vh;
+                    }
+                }
+                .price{
+                    width: 65vw;
+                    p{
+                        font-size: 1.5vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 1366px){
+    .main{
+        .card{
+            .text{
+                .desc{
+                    p{
+                        font-size: 2vh;
+                    }
+                }
+                .price{
+                    p{
+                        font-size: 2vh;
+                    }
+                }
+            }
+            .image{
+                .star{
+                    .starImg{
+                        height: 3vh;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 280px) and (min-height: 653px){
+    .main{
+        .card{
+            .image{
+                width: 25vw;
+                .prodImg{
+                    img{
+                        width: 22vw;
+                        height: auto;
+                    }
+                }
+                .star{
+                    .starImg{
+                        height: 1.8vh;
+                    }
+                }
+            }
+            .text{
+                width: 65vw;
+                .desc{
+                    width: 65vw;
+                }
+                .price{
+                    width: 65vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1848px) and (min-height: 949px){
+    .main{
+        .card{
+            width: 50vw;
+            .image{
+                width: 15vw;
+                .prodImg{
+                    img{
+                        width: 13vw;
+                        height: auto;
+                    }
+                }
+                .star{
+                    .starImg{
+                        height: 2.5vh;
+                        width: auto;
+                    }
+                }
+            }
+            .text{
+                width: 35vw;
+                .desc{
+                    width: 35vw;
+                    p{
+                        font-size: 2.5vh;
+                    }
+                }
+                .price{
+                    width: 35vw;
+                    p{
+                        font-size: 2.5vh;
+                    }
                 }
             }
         }
